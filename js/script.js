@@ -1,5 +1,6 @@
-var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber, argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
-playerScore = 0;
+// var argComputerMove, argMoveId, argPlayerMove, computerMove, playerMove, randomNumber, argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
+let randomNumber, buttonPaper, buttonRock, buttonScissors, buttonTest,
+playerScore = 0,
 computerScore = 0;
 
 function buttonClicked(argButtonName) {

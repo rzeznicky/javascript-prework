@@ -1,9 +1,12 @@
-// var argComputerMove, argMoveId, argPlayerMove, computerMove, playerMove, randomNumber, argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
-let randomNumber, buttonPaper, buttonRock, buttonScissors, buttonTest,
-playerScore = 0,
-computerScore = 0;
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper = document.getElementById('button-paper');
+const buttonScissors = document.getElementById('button-scissors');
+
+let playerScore = 0;
+let computerScore = 0;
 
 function buttonClicked(argButtonName) {
+  let randomNumber;
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
   playerMove = argButtonName;
@@ -54,11 +57,8 @@ function displayResult(argPlayerMove, argComputerMove) {
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
 
-// buttonTest = document.getElementById('button-test');
+// const buttonTest = document.getElementById('button-test');
 // buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
-buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
-buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
-buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('nozyce'); });

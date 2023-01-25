@@ -7,8 +7,7 @@ function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
 function printResult(playerScore, computerScore){
-	var div = document.createElement('div');
-	document.getElementById('results').innerHTML = '';
-	div.innerHTML = 'Gracz ' + playerScore + ' - ' + computerScore + ' Komputer';
-	document.getElementById('results').appendChild(div);
+	// const results = document.getElementById('results');
+	// results.textContent = 'Gracz ' + playerScore + ' - ' + computerScore + ' Komputer';
+	document.getElementById('results').textContent = 'Gracz ' + playerScore + ' - ' + computerScore + ' Komputer';
 }
